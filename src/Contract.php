@@ -943,6 +943,8 @@ class Contract
                 $eventLogData[] = [
                     'blockHash' => $object->blockHash,
                     'blockNumber' => hexdec($object->blockNumber),
+                    'transactionHash' => $object->transactionHash,
+                    'transactionIndex' => $object->transactionIndex,
                     'data' => $decodedData
                 ];
             }
